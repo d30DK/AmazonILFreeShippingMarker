@@ -1,6 +1,6 @@
 {
   "name": "Amazon-IL Free Shipping Marker",
-  "version": "0.1",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "Mark products which ship to Israel with Free Shipping with orders over $49.00",
   "icons": {
