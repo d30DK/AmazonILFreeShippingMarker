@@ -6,7 +6,7 @@ function popupManager() {
     'freeShippingUnder49': '#f1f1f1',
     'freeShippingAbove49': '#f1f1f1',
     'paidShipping': false,
-    'noShipping': '#b52323',
+    'noShipping': false,
   };
 
   this.init();
@@ -85,35 +85,6 @@ popupManager.prototype = {
 
 
 
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
-
   popup = new popupManager();
-
-  //getAllSettings();
 });
-
-
-function getAllSettings() {
-  $('section.settings .options select').each(function () {
-    var name = this.name,
-      _this = $(this);
-    chrome.storage.sync.get(name, function (obj) {
-      if (obj) {
-        _this.find('option[value="' + obj[name].bg + '"]').prop('selected', true);
-        if (obj[name].bg) {
-          var text_color = (obj[name].text) ? '#ffffff' : '';
-          _this.parent().find('div.color').css({ 'background-color': obj[name].bg, 'color': text_color });
-        }
-      }
-    });
-  });
-}
