@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon-IL Free Shipping Marker</title>
+    <script src="../code/jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css" type="text/css">
+  </head>
+  <body>
+    
+    <header>
+      <img src="../../icons/icon64.png"/>
+      <h1>Amazon-IL Free Shipping Marker</h1>
+    </header>
+    <section class="settings">
+        <div class="text">
+            Free shipping products<br/>
+            under $49
+        </div>
+        <div class="options">
+          <select name="freeShippingUnder49">
+                  <option value="">Choose a color</option>
+                  <option value="false">Disabled Option</option>
+                  <!-- <option value="#000000" data-text="true" style="background-color: Black;color: #FFFFFF;">Black</option> -->
+                  <option value="#808080" style="background-color: Gray;">Gray</option>
+                  <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                  <option value="#f1f1f1" style="background-color: #f1f1f1;;">LightGray</option>
+                  <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                  <!-- <option value="#0000FF" style="background-color: Blue;">Blue</option> -->
+                  <!-- <option value="#000080" data-text="true" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                  <option value="#800080" data-text="true" style="background-color: Purple;color: #FFFFFF;">Purple</option> -->
+                  <!-- <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option> -->
+                  <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                  <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                  <!-- <option value="#006400" data-text="true" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                  <option value="#008000" data-text="true" style="background-color: Green;color: #FFFFFF;">Green</option> -->
+                  <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                  <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                  <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                  <option value="#ff7a7a" style="background-color: #ff7a7a;">LightRed</option>
+                  <!-- <option value="#FF0000" style="background-color: Red;">Red</option> -->
+                  <!-- <option value="#A52A2A" style="background-color: Brown;">Brown</option> -->
+                  <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                  <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+          </select>
+          <div class="color">&nbsp;</div>
+        </div>
+
+      <div class="spacer"></div>
+      <div class="text">
+          Free shipping products<br/>
+          above $49
+      </div>
+      <div class="options">
+        <select name="freeShippingAbove49">
+                <option value="">Choose a color</option>
+                <option value="false">Disabled Option</option>
+                <!-- <option value="#000000" data-text="true" style="background-color: Black;color: #FFFFFF;">Black</option> -->
+                <option value="#808080" style="background-color: Gray;">Gray</option>
+                <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                <option value="#f1f1f1" style="background-color: #f1f1f1;;">LightGray</option>
+                <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                <!-- <option value="#0000FF" style="background-color: Blue;">Blue</option> -->
+                <!-- <option value="#000080" data-text="true" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                <option value="#800080" data-text="true" style="background-color: Purple;color: #FFFFFF;">Purple</option> -->
+                <!-- <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option> -->
+                <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                <!-- <option value="#006400" data-text="true" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                <option value="#008000" data-text="true" style="background-color: Green;color: #FFFFFF;">Green</option> -->
+                <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                <option value="#ff7a7a" style="background-color: #ff7a7a;">LightRed</option>
+                <!-- <option value="#FF0000" style="background-color: Red;">Red</option> -->
+                <!-- <option value="#A52A2A" style="background-color: Brown;">Brown</option> -->
+                <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+        </select>
+        <div class="color">&nbsp;</div>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="text">
+          Paid shipping products<br/>
+          (shipping cost money)
+      </div>
+      <div class="options">
+        <select name="paidShipping">
+                <option value="">Choose a color</option>
+                <option value="false">Disabled Option</option>
+                <!-- <option value="#000000" data-text="true" style="background-color: Black;color: #FFFFFF;">Black</option> -->
+                <option value="#808080" style="background-color: Gray;">Gray</option>
+                <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                <option value="#f1f1f1" style="background-color: #f1f1f1;;">LightGray</option>
+                <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                <!-- <option value="#0000FF" style="background-color: Blue;">Blue</option> -->
+                <!-- <option value="#000080" data-text="true" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                <option value="#800080" data-text="true" style="background-color: Purple;color: #FFFFFF;">Purple</option> -->
+                <!-- <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option> -->
+                <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                <!-- <option value="#006400" data-text="true" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                <option value="#008000" data-text="true" style="background-color: Green;color: #FFFFFF;">Green</option> -->
+                <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                <option value="#ff7a7a" style="background-color: #ff7a7a;">LightRed</option>
+                <!-- <option value="#FF0000" style="background-color: Red;">Red</option> -->
+                <!-- <option value="#A52A2A" style="background-color: Brown;">Brown</option> -->
+                <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+        </select>
+        <div class="color">&nbsp;</div>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="text">
+          No shipping products<br/>
+          (no shipping to Israel)
+      </div>
+      <div class="options">
+        <select name="noShipping">
+                <option value="">Choose a color</option>
+                <option value="false">Disabled Option</option>
+                <!-- <option value="#000000" data-text="true" style="background-color: Black;color: #FFFFFF;">Black</option> -->
+                <option value="#808080" style="background-color: Gray;">Gray</option>
+                <option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+                <option value="#f1f1f1" style="background-color: #f1f1f1;;">LightGray</option>
+                <option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+                <!-- <option value="#0000FF" style="background-color: Blue;">Blue</option> -->
+                <!-- <option value="#000080" data-text="true" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+                <option value="#800080" data-text="true" style="background-color: Purple;color: #FFFFFF;">Purple</option> -->
+                <!-- <option value="#FF1493" style="background-color: DeepPink;">DeepPink</option> -->
+                <option value="#EE82EE" style="background-color: Violet;">Violet</option>
+                <option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+                <!-- <option value="#006400" data-text="true" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+                <option value="#008000" data-text="true" style="background-color: Green;color: #FFFFFF;">Green</option> -->
+                <option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+                <option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+                <option value="#FFA500" style="background-color: Orange;">Orange</option>
+                <option value="#ff7a7a" style="background-color: #ff7a7a;">LightRed</option>
+                <!-- <option value="#FF0000" style="background-color: Red;">Red</option> -->
+                <!-- <option value="#A52A2A" style="background-color: Brown;">Brown</option> -->
+                <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+                <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+        </select>
+        <div class="color">&nbsp;</div>
+      </div>
+
+      <div class="spacer line"></div>
+      <div class="text">
+          Tracking information<br/>on orders page
+      </div>
+      <div class="options">
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="tracking_information_orders_page" checked>
+              <label class="onoffswitch-label" for="tracking_information_orders_page">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+      </div>
+      
+    </section>
+
+  </body>
+</html>
