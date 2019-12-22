@@ -30,3 +30,9 @@ v0.2 -
   Shipping companies supported: UPS, DHL, Fedex, I-Parcel, Aramex & Israel Postal Company.
   Each user can also enable or disable this option from the extension settings (click on the extension icon).
   Default setting: Enabled
+  
+v0.2.2 - 
+- Fixed issue when product price is lower than $49 but colored as product above $49
+- Added support for extension icon in Dark Theme
+
+

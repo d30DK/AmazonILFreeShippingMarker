@@ -241,21 +241,7 @@ amazonShippingMarker.prototype = {
 
 			var isUnder49 = $('div#price:contains("' + this.messages.countryAndQualified + '"),div#price:contains("' + this.messages.countryAndQualified2 + '")').length,
 				isAbove49 = $('div#price:contains("' + this.messages.countryOnly + '")').length;
-			if (isAbove49 > 0) {
-				if (this.default_colors.freeShippingAbove49.bg) {
-					$('div.a-box-inner:contains("' + this.messages.countryOnly + '")').addClass(this.styleClass).css({
-						'background-color': this.default_colors.freeShippingAbove49.bg,
-						'color': (this.default_colors.freeShippingAbove49.text) ? '#ffffff' : 'inherit'
-					}).find('.accordion-row-content').addClass(this.styleClass).css({
-						'background-color': this.default_colors.freeShippingUnder49.bg,
-						'color': (this.default_colors.freeShippingUnder49.text) ? '#ffffff' : 'inherit'
-					});
-					$('div#price:contains("' + this.messages.countryOnly + '")').addClass(this.styleClass).css({
-						'background-color': this.default_colors.freeShippingAbove49.bg,
-						'color': (this.default_colors.freeShippingAbove49.text) ? '#ffffff' : 'inherit'
-					});
-				}
-			} else if (isUnder49 > 0) {
+			if (isUnder49 > 0) {
 				if (this.default_colors.freeShippingUnder49.bg) {
 					$('div.a-box-inner:contains("' + this.messages.countryAndQualified + '"),div.a-box-inner:contains("' + this.messages.countryAndQualified2 + '")').addClass(this.styleClass).css({
 						'background-color': this.default_colors.freeShippingUnder49.bg,
@@ -267,6 +253,21 @@ amazonShippingMarker.prototype = {
 					$('div#price:contains("' + this.messages.countryAndQualified + '"),div#price:contains("' + this.messages.countryAndQualified2 + '")').addClass(this.styleClass).css({
 						'background-color': this.default_colors.freeShippingUnder49.bg,
 						'color': (this.default_colors.freeShippingUnder49.text) ? '#ffffff' : 'inherit'
+					});
+				}
+			}
+			else if (isAbove49 > 0) {
+				if (this.default_colors.freeShippingAbove49.bg) {
+					$('div.a-box-inner:contains("' + this.messages.countryOnly + '")').addClass(this.styleClass).css({
+						'background-color': this.default_colors.freeShippingAbove49.bg,
+						'color': (this.default_colors.freeShippingAbove49.text) ? '#ffffff' : 'inherit'
+					}).find('.accordion-row-content').addClass(this.styleClass).css({
+						'background-color': this.default_colors.freeShippingUnder49.bg,
+						'color': (this.default_colors.freeShippingUnder49.text) ? '#ffffff' : 'inherit'
+					});
+					$('div#price:contains("' + this.messages.countryOnly + '")').addClass(this.styleClass).css({
+						'background-color': this.default_colors.freeShippingAbove49.bg,
+						'color': (this.default_colors.freeShippingAbove49.text) ? '#ffffff' : 'inherit'
 					});
 				}
 			} else {
