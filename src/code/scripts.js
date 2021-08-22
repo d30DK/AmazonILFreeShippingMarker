@@ -42,7 +42,7 @@ function amazonShippingMarker(debug = false) {
 	this.debug = debug;
 	this.messages = {
 		'countryOnly': 'FREE Shipping to Israel',
-		'countryAndAmount': 'Eligible for FREE Shipping on qualifying orders over $49.00',
+		'countryAndAmount': 'Eligible for FREE Shipping on qualifying orders over $65.00',
 		'countryAndQualified': 'FREE Shipping to Israel on qualifying orders over ',
 		'countryAndQualified2': 'Eligible for FREE Shipping on qualifying',
 		'paidShipping': 'Ships to Israel',
