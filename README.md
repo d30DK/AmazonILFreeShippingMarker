@@ -35,4 +35,10 @@ v0.2.2 -
 - Fixed issue when product price is lower than $49 but colored as product above $49
 - Added support for extension icon in Dark Theme
 
+v0.2.2 - 
+- Added the new requirement of $65
 
+
+Group - https://www.facebook.com/groups/israelamazon
+
+Links - https://www.aviparshan.com/israeldeals/index.html
