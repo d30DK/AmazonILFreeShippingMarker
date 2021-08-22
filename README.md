@@ -37,6 +37,7 @@ v0.2.2 -
 
 v0.2.2 - 
 - Added the new requirement of $65
+- As this is a forked version, please download and unpack extension to load into chrome
 
 
 Group - https://www.facebook.com/groups/israelamazon
